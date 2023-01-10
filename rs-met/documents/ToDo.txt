@@ -1,0 +1,1 @@
+-write a tutorial on bandlimited digital oscillators

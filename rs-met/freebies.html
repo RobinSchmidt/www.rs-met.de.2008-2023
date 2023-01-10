@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01//EN" "http://www.w3.org/tr/html4/strict.dtd">
+<html><head><title>RS-MET</title><link rel=stylesheet type="text/css" href="style.css"></head>
+<body><div class="leftpad"></div><div class="rightpad"></div><div class="content"><div class="inner">
+
+<!-- 
+
+-->
+
+<a name="ToolChain"></a>
+<h3>ToolChain</h3>
+<table align=center>
+ <tr>
+  <td width=50%>
+   <a href="graphics/screenshots/ToolChain.png">
+    <img alt="ToolChain" src="graphics/screenshots/ToolChain.png" width="100%">
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>connect an arbitrary number of RS-MET effects in series</li>
+    <li>you may put an instrument at the front of the chain</li>   
+    <li>9 built-in processors, more to come</li>
+    <li>supports Win/VST2/x64 and Mac/AU</li>
+	<li>replaces all older single-purpose RS-MET plug-ins</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+	ToolChain is a plugin that is actually many plugins in one. It acts as a shell which lets
+	you set up a chain of effects, one processed after another in a series connection. You can also
+	put instruments at the front of the chain. At some point, i was just tired of maintaining a 
+	separate project for each of my plugins, so i lumped them all into one. The download archive 
+	contains a Windows VST x64 version, a Mac AU version, a support folder containing presets, 
+	sample-content, etc. and a textfile with manual installation instructions.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+ <a href="software/freebies/ToolChain_v2017.12.26.zip">Download ToolChain</a>
+</h5>
+
+<hr>
+<p>
+ For legacy reasons, the older versions of the plugins which are now supposed to be replaced by 
+ ToolChain are still available below. At the moment, not yet all of them are integrated into 
+ ToolChain, but this is what is going to happen soon. Also, the older plugins may still be needed, 
+ if you are using a 32-Bit (x86) host.
+</p>
+
+<a name="EasyQ"></a>
+<hr>
+<h3>EasyQ</h3>
+<table align=center>
+ <tr>
+  <td width=50%>
+   <a href="graphics/screenshots/EasyQ.png">
+    <img alt="EasyQ" src="graphics/screenshots/EasyQ.png" width="100%">
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>unlimited number of filter stages ("bands")</li>
+    <li>each stage can be one of the following characteristics: bell, low-/high-shelf, 
+	    low-/highpass (6 or 12 dB/oct), notch</li>   
+    <li>clean equalization - no additional colorations</li>
+    <li>low CPU usage</li>
+    <li>+-48 dB gain range</li>   
+    <li>stereo modes: linked, left/right, mid/side and mono</li>   
+    <li>minimum phase response</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    EasyQ is an easy-to-use equalizer with an arbitrary number of filter stages in series 
+    connection. Each of the filter stages can operate in one of the following modes: 
+    peak/cut (aka bell or parametric EQ), high- or low-shelving, notch and low- or highpass (both 
+    with either 6 or 12 dB/oct slope). EasyQ is also easy on the CPU and just does what an EQ is 
+    supposed to do without performing any additional voodoo. As such, it is well suited to serve as 
+    a go-to EQ for the routine equalizing tasks.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+ <a href="software/freebies/EasyQ_v11.04.zip">Download EasyQ</a>
+</h5>
+
+<a name="CrossOver"></a>
+<hr>
+<h3>CrossOver</h3>
+<table align=center>
+ <tr>
+  <td width=50%>
+   <a href="graphics/screenshots/CrossOver.png">
+    <img alt="CrossOver" src="graphics/screenshots/CrossOver.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+   <li>Splits signal in up to 4 frequency bands</li>
+   <li>separation between bands up to 96 dB/oct</li>
+   <li>flat sum due to Linkwitz/Riley filters</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    CrossOver is a plugin to split an incoming signal into several (at most 4) frequency ranges. 
+	It can be used to build your own multiband effects within a modular (sub)host environment. 
+	By using only 2 bands, you can also create bass-effects. These are effects which keep the low 
+	frequency range dry and affect only the high frequency range. The band-splitting is done by 
+	complementary pairs of Linkwitz-Riley lowpass/highpass filters, the slope of which is 
+	adjustable between 12 and 96 dB/oct. For configurations with more than 2 output bands, the 
+	signal is first split into 2 bands (low and high) and then the low or high or both bands is/are 
+	split further, thus the splitting is done in a hierarchical manner.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/CrossOver_v10.04.zip">Download CrossOver</a>
+</h5>
+
+<a name="EngineersFilter"></a>
+<hr>
+<h3>EngineersFilter</h3>
+<table align=center>
+ <tr>
+  <td width=50%>
+   <a href="graphics/screenshots/EngineersFilter.png">
+    <img alt="EngineersFilter" src="graphics/screenshots/EngineersFilter.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>ultra-steep filters possible</li>
+    <li>design methods: Bessel, Butterworth, Chebychev I and II, elliptic, Papoulis</li>
+    <li>characteristics: lowpass, highpass, bandpass, bandreject, low-/high shelf, peak</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    EngineersFilter is a filter plugin that allows for extremely steep filtering. It achieves this 
+	by implementing high order IIR filter design methods that are commonly used in science and 
+	engineering, namely Butterworth, Chebychev, inverse Chebychev, elliptic (aka Cauer), Bessel and 
+	Papoulis filters. Each of these filter design methods can be applied to create lowpass, 
+	highpass, bandpass, bandreject, high/low shelving and peak/dip filters of orders up to 20.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/EngineersFilter_v11.04.zip">Download EngineersFilter</a>
+</h5>
+
+<a name="FuncShaper"></a>
+<hr>
+<h3>FuncShaper</h3>
+<table align=center>
+ <tr>
+  <td width=40%>
+   <a href="graphics/screenshots/FuncShaper.png">
+    <img alt="FuncShaper" src="graphics/screenshots/FuncShaper.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>arbitrary transfer functions via math-expressions</li>
+    <li>input- and output-filters</li>
+    <li>up to 16x oversampling</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    FuncShaper is a waveshaping distortion plugin based on a mathematical expression evaluator. You 
+	can enter an expression to create the function which will be used as waveshaping transfer 
+	function. The expression may contain arithmetic operators, well known standard functions (sin, 
+	cos, tanh, etc.) as well as some proprietary special functions, which are specifically geared 
+	towards the application domain (soft-clipping, Chebychev polynomials, etc.).
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/FuncShaper_v11.07.zip">Download FuncShaper</a>
+</h5>
+
+<a name="TrackMeter"></a>
+<hr>
+<h3>Track Meter</h3>
+<table align=center>
+ <tr>
+  <td width=20%>
+   <a href="graphics/screenshots/TrackMeter.png">
+    <img alt="TrackMeter" src="graphics/screenshots/TrackMeter.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>level meters for left, right, mid and side signals</li>
+    <li>adjustable ballistics with predefined values for VU and PPM</li>
+    <li>correlation meter</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    Track Meter is a plugin to display the current level of a stereo input signal separately for 
+	the left, right, mid and side channels and also to display the cross-correlation between the 
+	two channels. You may freely adjust the rise- and fall time constants (collectively called 
+	ballistics). Convenient buttons exist for using the standardized ballistics for VU and PPM 
+	measurements.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/TrackMeter_v0.6.zip">Download TrackMeter</a>
+</h5>
+
+<!-- 
+<p> 	 
+TrackMeter received the Editor's Choice Award at <a href="http://www.hitsquad.com" target="_blank">www.hitsquad.com</a> as can be verified <a href="http://www.hitsquad.com/news/editorschoice/track_meter_v06/" target="_blank">here</a>.
+<a href="http://www.hitsquad.com/smm/" target="_blank"> 
+<img src="http://www.hitsquad.com/hq/images/edchoice/edchoice01.gif" width=155 height=105 alt="Hitsquad.com Editor's Choice Award Winner" border=0>
+</a>
+ -->
+ 
+<a name="SignalAnalyzer"></a> 
+<hr>
+<h3>Signal Analyzer</h3>
+<table align=center>
+ <tr>
+  <td width=50%>
+   <a href="graphics/screenshots/SignalAnalyzer1.png">
+    <img alt="SignalAnalyzer1" src="graphics/screenshots/SignalAnalyzer1.png" width=100%> 
+   </a>
+   <a href="graphics/screenshots/SignalAnalyzer2.png">
+    <img alt="SignalAnalyzer2" src="graphics/screenshots/SignalAnalyzer2.png" width=100%>   
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>oscilloscope and spectrum analyzer</li>
+    <li>independent zoom for both axes</li>
+    <li>synchronization to input signal (oscilloscope)</li>
+    <li>spectral resolution up to 32768 bands</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+  <p>
+   Signal Analyzer is a combined oscilloscope/spectrum-analyzer plugin for inspecting signals in 
+   realtime in the time- and frequency domain. The oscilloscope's refresh rate may be synchronized 
+   to the period of the incoming signal to stabilize the plot of periodic waveforms. Both views may 
+   be frozen and the frozen display can be exported into a .png file.
+  </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/SignalAnalyzer.zip">Download SignalAnalyzer</a>
+</h5>
+
+<a name="ChannelMatrix2x2"></a> 
+<hr>
+<h3>Channel Matrix 2x2</h3>
+<table align=center>
+ <tr>
+  <td width=35%>
+   <a href="graphics/screenshots/ChannelMatrix2x2.png">
+    <img alt="ChannelMatrix2x2" src="graphics/screenshots/ChannelMatrix2x2.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>arbitrary redistribution of 2-channel (stereo) signals</li>
+    <li>boost, M/S encode/decode, swap channels, invert polarity, etc.</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+  <p>
+   Channel Matrix 2x2 is a plugin which lets you matrix-multiply the signals of two input channels 
+   in order to obtain another two signals which will appear at the two output channels. Example 
+   uses are mid/side encoding/decoding, mixing stereo to mono, switching channels left for right, 
+   boosting or attenuating signals, inverting signal polarity, etc.
+  </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/ChannelMatrix2x2.zip">Download Channel Matrix 2x2</a>
+</h5>
+
+<a name="PitchShifter"></a> 
+<hr>
+<h3>Pitch Shifter</h3>
+<table align=center>
+ <tr>
+  <td width=45%>
+   <a href="graphics/screenshots/PitchShifter.png">
+    <img alt="PitchShifter" src="graphics/screenshots/PitchShifter.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>granular-based pitch shifting algorithm</li>
+    <li>adaption of grain-length to input signal period</li>
+    <li>feedback</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    Pitch Shifter is a plugIn to shift the pitch of an incoming audio signal. By mixing the 
+    pitch-shifted signal with the original signal via the dry/wet control, basic detuning, 
+    octaving and harmonizing effects are also possible. This shifter is based on a delayline with 
+    two crossfaded read pointers. Such an architecture allows for feedback - and feedback gives the 
+    potential to rather drastic, weird special effects like monster-voices, flanger-like effects 
+	and more.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/PitchShifter_v0.5.zip">Download Pitch Shifter</a>
+</h5>
+
+<a name="MidiMonitor"></a> 
+<hr>
+<h3>MIDI Monitor</h3>
+<table align=center>
+ <tr>
+  <td width=50%>
+   <a href="graphics/screenshots/MidiMonitor.png">
+    <img alt="MidiMonitor" src="graphics/screenshots/MidiMonitor.png" width=100%> 
+   </a>
+  </td>
+  <td valign=middle>
+   <div class="listHeading">Key Features</div>
+   <ul compact>
+    <li>shows note-events, controllers, pitch-wheel and much more</li>
+    <li>event filter (to show only events that are of interest)</li>
+    <li>2 versions available (for VST-effect and VST-instrument slots)</li>
+   </ul>
+  </td>		
+ </tr> 
+ <tr>
+  <td colspan=2>
+   <p>
+    MIDI Monitor is a plugin which shows you the incoming MIDI messages. Because some hosts treat 
+	instrument- and effect-plugins differently (and do not allow plugging one kind of plugin into 
+	a slot of a different kind), there is an 'instrument' and an 'effect' version of the plugin to 
+	make it pluggable everywhere. The MIDI-events are passed through unchanged, the same holds for 
+	any incoming audio signal.
+   </p>
+  </td>
+ </tr>  
+</table>
+<h5>
+<a href="software/freebies/MidiMonitor_v0.5.zip">Download MIDI Monitor</a>
+</h5>
+
+<hr>
+</div></div>
+<div class="headline">Freebies</div>
+<div class="logo"></div>
+<div class="navi">
+ <ul class="naviList"> 
+  <li><a href="index.html">Home</a></li> 
+  <li><a href="products.html">Products</a></li> 
+  <li class="current"><a href="freebies.html">Freebies</a></li>
+  <li><a href="support.html">Support</a></li>
+  <li><a href="tutorials.html">Tutorials</a></li>
+  <li><a href="company.html">Company</a></li>
+  <li><a href="misc.html">Misc</a></li>
+ </ul>  
+</div></body></html>
+
+<!-- Counter by GOWEB -->
+<a href="http://www.webcounter.goweb.de/" target="_blank"><img src="http://webcounter.goweb.de/2366.GIF" hspace="1" vspace="1" border="0" alt="Europas Counter Nr1"></a>
+<!-- Counter Einbaucode Ende -->

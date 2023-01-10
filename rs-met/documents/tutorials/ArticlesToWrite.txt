@@ -1,0 +1,10 @@
+-Digital Signals
+-Filters
+-Dynamics Processing
+-Modulation
+-Equalizers
+-Subtractive synthesis
+-FM synthesis
+-Flanger, Phaser
+-Vocoder
+-

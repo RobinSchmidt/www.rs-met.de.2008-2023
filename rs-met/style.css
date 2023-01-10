@@ -1,0 +1,268 @@
+/* stuff to obtain the max-width/centered behavior: */
+body 
+{ 
+ padding: 0px;
+ margin-left: 8px;
+ margin-right: 8px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ min-width: 500px; /* desired min-width for content + navi-width + margin-left + margin-right */
+ background-color: rgb(230, 230, 255); 
+ 
+ /*font: Arial;*/
+ font-family: sans-serif; 
+ font-size: 13pt; 
+ color: "#000000";
+}
+.leftpad 
+{ 
+ float: left; 
+ height: 10px; 
+ width: 50%; 
+ margin-right: -578px; /* max-width/2 + navi-width = 900/2+128 = 578 */
+}
+.rightpad 
+{ 
+ float: right; 
+ height: 10px; 
+ width: 50%; 
+ margin-left: -450px;  /* max-width/2 = 900/2 = 450 */
+}
+.content 
+{ 
+ padding-left: 128px;  /* navi-width */
+ padding-top: 64px;    /* headline-height */
+ overflow: hidden; 
+ background-color: rgb(230, 230, 255);
+}
+.inner 
+{ 
+ overflow: hidden; 
+ width: 100%; 
+ background-color: rgb(230, 230, 255);
+}
+
+/* stuff for the fixed navigation bar on the left: */
+.logo
+{ 
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 128px;
+ height: 64px;
+ background-image: url(graphics/logo128x64.png);
+} 
+.navi 
+{ 
+  position: fixed;
+  top: 64px;
+  left: 0px;
+  width: 128px;  
+  height: 100%;
+  background-image: url(graphics/gradient128x1.png);  
+  background-repeat: repeat-y;  
+} 
+ul.naviList 
+{ 
+ margin: 0; 
+ padding: 0; 
+ list-style-type: none; 
+} 
+ul.naviList a 
+{ 
+ margin-top: 8px;
+ margin-left: 12px;
+ width: 104px;
+ line-height: 28px;
+ display: block; 
+ color: rgb(0, 0, 0); 
+ text-decoration: none; 
+ background-color: rgb(190, 190, 215); 
+ border: 2px solid rgb(0, 0, 0); 
+ font-family: sans-serif;
+ font-size: 15pt;
+ text-align: center;   
+ 
+ box-shadow: 3px 3px 6px #666;  
+} 
+ul.naviList a:hover /*, ul.naviList a:focus -> nah: keeps bright when using browser's back button*/
+{ 
+  background-color: rgb(230, 230, 255); 
+} 
+ul.naviList .current a 
+{ 
+  width: 114px;  /* navi-width - margin-left - border-left = 128-12-2 */
+  background-color: rgb(230, 230, 255); 
+  border-right: 0px; 
+  
+  box-shadow: 0px 0px 0px #666;  
+  /*cursor: default; nah: on the produc pages, it makes sense to see the pointing hand */
+} 
+
+/* stuff for the fixed headline: */
+.headline
+{ 
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 450px;
+  width: 100%;  
+  line-height: 64px; /* used instead of height to get vertically centered text */
+  max-height: 64px;  /* to avoid visible line-breaks when text is too long */
+  background-image: url(graphics/gradient1x64.png);  
+  background-repeat: repeat-x;  
+  font-size: 25pt;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+} 
+
+/* headlines, paragraphs, lists: */
+h1
+{
+ font-size: 28pt;  
+ text-align: center;
+ 
+ margin: 0;
+ padding: 0; 
+}
+h2
+{
+ font-size: 20pt;  
+ text-align: center;
+ 
+ margin: 0;
+ padding: 0; 
+}
+h3
+{ 
+ font-size: 16pt; 
+ margin-top: 8pt;
+ margin-bottom: 6pt; 
+ padding: 0;  
+}
+h4
+{
+ font-size: 13pt; 
+ 
+ margin-top: 18pt;
+ margin-bottom: 5pt;
+ padding: 0;
+ 
+}
+h5
+{
+ font-size: 13pt; 
+ text-align: center;
+ 
+ margin-top: 5pt;
+ margin-bottom: 5pt;
+ padding: 0;  
+}
+p
+{
+ font-size: 11pt; 
+ text-align: justify;
+ 
+ margin-top: 7pt;
+ margin-bottom: 7pt;
+ padding: 0; 
+}
+
+
+ul
+{
+ margin-top: 5pt;
+ padding-top: 0;
+
+}
+
+li
+{
+ font-family: sans-serif; 
+ font-size: 11pt; 
+ color: "#000000"
+}
+.listHeading
+{
+ padding-left: 1.5em;
+ font-size: 13pt; 
+ font-weight: bold;
+ text-align: left;
+}
+
+hr
+{
+ margin-top: 20pt;
+ margin-bottom: 20pt;
+}
+
+table 
+{
+ margin-top: 0pt;
+ margin-bottom: 0pt;
+}
+
+.center
+{
+ text-align: center;
+}
+
+/*
+ul .h5
+{
+ text-align: left;
+}
+*/
+
+
+
+/* for nice-looking table cells: */
+.blueCell
+{
+ background-color: rgb(190, 190, 215); 
+ 
+ padding-left: 0.5em;
+ padding-right: 0.5em;
+ 
+ -moz-border-radius: 1em; 
+ -webkit-border-radius: 1em; 
+ border-radius: 1em;  
+ 
+ -webkit-box-shadow: 3px 3px 6px #666; 
+ -moz-box-shadow: 3px 3px 6px #666; 
+ box-shadow: 3px 3px 6px #666;  
+}
+
+/* let images appear with drop-shadow by default and define a class to avoid the shadow: */
+img 
+{ 
+ box-shadow: 3px 3px 6px #666;  
+} 
+.noShadow
+{
+ box-shadow: 0px 0px 0px #000; 
+}
+
+/* styles for different types of links: */
+.document
+{ 
+  background: url(graphics/documentLink.png) no-repeat left bottom;
+  padding-left: 12px; 
+} 
+.audio
+{ 
+  background: url(graphics/audioLink.png) no-repeat left bottom;
+  padding-left: 12px; 
+} 
+.download
+{ 
+  background: url(graphics/downloadLink.png) no-repeat left bottom;
+  padding-left: 13px; 
+} 
+.external
+{ 
+  background: url(graphics/externalLink.png) no-repeat left bottom;
+  padding-left: 13px; 
+} 
+

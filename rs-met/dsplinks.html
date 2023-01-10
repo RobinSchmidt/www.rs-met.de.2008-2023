@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>RS-MET</title><link rel=stylesheet type="text/css" href="style.css"></head>
+<body><div class="leftpad"></div><div class="rightpad"></div><div class="content"><div class="inner">
+
+<br>
+<p>
+ On this page, you will find a collection of links to various books and papers related to audio 
+ signal processing and programming. These links all point to the original works outside this site, 
+ so if any of them seems to be broken by the time you click it, chances are that the original 
+ author moved or removed the link-target. In this case, I'd be grateful for a notification so I may 
+ update or remove the link. The order of the topics is roughly determined by what I consider as 
+ most relevant for my own work and the order of the links within each topic by what I consider to 
+ be a good progression from basic to more advanced material.
+</p>
+
+<!-- Maybe sort by topic first and then by publication type (currently it's vice versa) -->
+
+<hr>
+<h2>Signal Processing</h2>
+
+<h3>Books</h3>
+
+<p>
+ <a class="external" href="http://www.dspguide.com/" target="_blank">
+  <strong>The Scientist and Engineer's Guide to Digital Signal Processing</strong>
+ </a> (by Steven W. Smith)
+ <br>
+ Introductory book on DSP.
+ <br>
+ Individual chapters can be viewed online and downloaded as pdf.
+</p>
+
+<p>
+ <a class="external" href="http://ccrma.stanford.edu/~jos/dft/" target="_blank">
+  <strong>Mathematics of the Discrete Fourier Transform (DFT) with Audio Applications</strong>
+ </a> (by Julius O. Smith III)
+ <br>
+ Book about the discrete Fourier transform. Explains also the fundamentals of complex numbers and 
+ some general concepts in digital signal processing. Can be viewed online as html.
+</p>
+
+<p>
+ <a class="external" href="http://ccrma.stanford.edu/~jos/filters/" target="_blank">
+  <strong>Introduction to Digital Filters with Audio Applications</strong>
+ </a> (by Julius O. Smith III)
+ <br>
+ Book about digital filters. Can be viewed online as html.
+</p>
+
+<p>
+ <a class="external" href="https://ccrma.stanford.edu/~jos/pasp/" target="_blank">
+  <strong>Physical Audio Signal Processing for Virtual Musical Instruments and Audio Effects</strong>
+ </a> (by Julius O. Smith III)
+ <br>
+ Covers a lot of topics that are relevant in the context of audio-specific DSP inlcuding 
+ interpolation, delaylines, reverberation, modulation-effects, physical modeling, etc. Can be viewed 
+ online as html.
+</p>
+
+<p>
+ <a class="external" href="https://ccrma.stanford.edu/~jos/sasp/" target="_blank">
+  <strong>Spectral Audio Signal Processing</strong>
+ </a> (by Julius O. Smith III)
+ <br>
+ A book about modeling signals with sinusoids and/or noise and about the STFT time-frequency 
+ represenation. Can be viewed online as html.
+</p>
+
+<p>
+ <a class="external" href="http://eceweb1.rutgers.edu/~orfanidi/intro2sp/" target="_blank">
+  <strong>Introduction to Signal Processing</strong>
+ </a> (by Sophocles Orfanidis)
+ <br>
+ General DSP textbook.
+ <br>
+ Available as
+ <a class="document" href="http://eceweb1.rutgers.edu/~orfanidi/intro2sp/orfanidis-i2sp.pdf" target="_blank">
+  pdf download
+ </a>.
+ <br>
+ Additional material: 
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/intro2sp/solutions.zip">
+  Solution manual
+ </a>,
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/intro2sp/m.zip">
+  MatLab functions
+ </a>,
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/intro2sp/c.zip">
+  C functions
+ </a>,
+</p>
+
+
+
+
+<p>
+ <a class="external" href="http://eceweb1.rutgers.edu/~orfanidi/osp2e/" target="_blank">
+  <strong>Optimum Signal Processing</strong>
+ </a> (by Sophocles Orfanidis)
+ <br>
+ Textbook on optimum signal processing (statistical signal models, adaptive filters, etc.). 
+ <br>
+ Available as
+ <a class="document" href="http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e.pdf" target="_blank">
+  pdf download
+ </a>
+ <br>
+ Additional material: 
+ <a class="document" href="http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-man.pdf" target="_blank">
+  Solution manual
+ </a>,
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-m.zip">
+  MatLab functions
+ </a>,
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-c.zip">
+  C functions
+ </a>,
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-f.zip">
+  Fortran subroutines
+ </a>,
+</p>
+
+<!-- C++, Math, Physics, APIs -->
+
+<br>
+<h3>Websites</h3>
+
+<p>
+ <a class="external" href="http://www.dafx.de" target="_blank">
+  <strong>DAFX</strong>
+ </a><br>
+ Research project for audio DSP. It has lots of papers available for download.
+</p>
+
+<p>
+ <a class="external" href="http://smcnetwork.org/" target="_blank">
+  <strong>Sound and Music Computing (SMC)</strong>
+ </a><br>
+ Sound and Music Computing research community. Lots of papers here as well.
+</p>
+
+<p>
+ <a class="external" href="http://ccrma.stanford.edu/~jos/" target="_blank">
+  <strong>Julius Orion Smith III</strong>
+ </a><br>
+ Website of Julius O. Smith. He offers a lot of papers and 4 online books about audio DSP.
+</p>
+
+<!-- JAES, CMJ, etc. -->
+
+<br>
+<h3>Selected Papers</h3>
+
+<h4>Reverb</h4> <!-- define h6 in the stylsheet -->
+
+<p>
+ <a class="document" href="http://ccrma.stanford.edu/~lukedahl/pdfs/Dahl,Jot-AbsorbentAllPassReverbs-Dafx2000.pdf" target="_blank">
+  <strong>A reverberator based on absorbent all-pass filters</strong>
+ </a> (by Luke Dahl, Jean-Marc Jot)
+ <br>
+ Extends the general FDN reverb structrue by putting allpass filters in series to the delaylines.
+</p>
+
+<h4>Filters</h4>
+
+<p>
+ <a class="document" href="http://www.ece.rutgers.edu/~orfanidi/ece521/notes.pdf" target="_blank">
+  <strong>Lecture Notes on Elliptic Filter Design</strong>
+ </a> (by Sophocles Orfanidis)
+ <br>
+ Quite comprehensive paper on elliptic filter design, covering also Chebychev I and II and 
+ Butterworth filters as special cases.
+ <br>
+ Additional material: 
+ <a class="download" href="http://www.ece.rutgers.edu/~orfanidi/ece521/notes-mfiles.zip">
+  MatLab files
+ </a>
+</p>
+
+<p>
+ <a class="document" href="http://www.ece.rutgers.edu/~orfanidi/ece348/hpeq.pdf" target="_blank">
+  <strong>High-Order Digital Parametric Equalizer Design</strong>
+ </a> (by Sophocles Orfanidis)
+ <br>
+ Extends classical textbook lowpass prototype filter designs (Butterworth, Chebychev I and II, 
+ elliptic) to the low-shelving case which also results in algorithms for high-shelving and peaking
+ designs via lowpass-to-lowpass and lowpass-to-bandpass transforms.
+ <br>
+ Additional material: 
+ <a class="download" href="http://eceweb1.rutgers.edu/~orfanidi/hpeq/hpeq.zip">
+  MatLab files
+ </a>
+</p>
+
+
+
+
+
+<!-- 
+Oscillators, Dynamics Processing, Distortion, Physical Modeling, Spectral Modeling, Modulation-FX
+etc.
+-->
+
+
+<h4>Physical Modeling</h4>
+
+<p>
+ <a class="document" href="http://smcnetwork.org/files/proceedings/2004/P46.pdf" target="_blank">
+  <strong>Physical Modeling of Impacts: Theory and Experiments on Contact Time and Spectral Centroid</strong>
+ </a> (by Federico Avanzini, Davide Rocchesso)
+</p>
+
+
+<h4>Beat Tracking</h4>
+
+<p>
+ <a class="document" href="http://smcnetwork.org/files/proceedings/2004/P36.pdf" target="_blank">
+  <strong>A Real-Rime Beat Tracker for Unrestricted Audio Signals</strong>
+ </a> (by Nicolas Scaringella, Giorgio Zoia)
+</p>
+
+
+<h4>Misc</h4>
+
+<p>
+ <a class="document" href="http://smcnetwork.org/files/proceedings/2005/Salerno2.pdf" target="_blank">
+  <strong>A Synthesizer Based on Square Waves</strong>
+ </a> (by Sossio Vergara)
+</p>
+
+
+<hr>
+<h2>Computer Science</h2>
+
+<h3>Books</h3>
+
+<p>
+ <a class="external" href="http://www.jjj.de/fxt/#fxtbook" target="_blank">
+  <strong>Matters Computational - Ideas, Algorithms, Source Code</strong>
+ </a> (by Jörg Arndt)
+ <br>
+ Book about algorithms for bit-twiddling, combinatorics, sort and search, fast transforms, function evaluation and finite fields.
+ <br>
+ Available as
+ <a class="document" href="http://www.jjj.de/fxt/fxtbook.pdf" target="_blank">
+  pdf download
+ </a>.
+ <br>
+ Additional material: 
+ <a class="download" href="http://www.jjj.de/fxt/fxt-2011.12.02.tgz">
+  Source Code
+ </a>
+</p>
+
+<p>
+ <a class="external" href="http://www.cs.berkeley.edu/~vazirani/algorithms.html" target="_blank">
+  <strong>Algorithms</strong>
+ </a> (by S. Dasgupta, C.H. Papadimitriou, U.V. Vazirani)
+ <br>
+ Book about algorithms for...
+ <br>
+ Available as
+ <a class="document" href="http://www.cs.berkeley.edu/~vazirani/algorithms/all.pdf" target="_blank">
+  pdf download
+ </a>.
+</p>
+
+
+
+
+<hr>
+<h2>Programming</h2>
+
+
+
+<hr>
+<h2>Music Theory</h2>
+
+<h3>Books</h3>
+
+<p>
+ <a class="external" href="http://www.abdn.ac.uk/~mth192/html/maths-music.html" target="_blank">
+  <strong>Music: a Mathematical Offering</strong>
+ </a> (by Dave Benson)
+ <br>
+ Book about mathematical concepts in music theory. I covers also introductory topics in musical 
+ acoustics and digital signal processing.
+ <br>
+ Available as
+ <a class="document" href="http://www.abdn.ac.uk/~mth192/html/music.pdf" target="_blank">
+  pdf download
+ </a>.
+</p>
+
+<br>
+<h3>Websites</h3>
+
+<p>
+ <a class="external" href="http://sethares.engr.wisc.edu/consemi.html" target="_blank">
+  <strong>Relating Tuning and Timbre</strong>
+ </a> (by William Sethares)
+ <br>
+ A short summary of the main ideas in William Sethares' book "Tuning, Timbre, Spectrum, Scale", 
+ where he provides the foundations for a psychoacoustically motivated unifying framework for music 
+ theory. Within this framework, classical western music theory appears as the special case, where 
+ we consider only a specific subset of all possible timbres - namely those, where the partials are 
+ approximately harmonics of some fundamental frequency. This book is a very profound revelation 
+ and a must-read for every music theorist.
+</p>
+
+
+<hr>
+<h2>Mathematics</h2>
+
+
+<hr>
+<h2>Physics</h2>
+
+
+
+
+
+<hr>
+<h2>Unclassified/Collected Links</h2>
+<a class="external" href="http://shoup.net/ntb/" target="_blank">
+  <strong>A Computational Introduction to Number Theory and Algebra</strong>
+ </a>
+
+<a class="external" href="http://freecomputerbooks.com/" target="_blank">
+ <strong>freecomputerbooks.com - Linkfarm with lots of free books</strong>
+</a>
+
+
+<hr>
+</div></div>
+<div class="headline">DSP Links</div>
+<div class="logo"></div>
+<div class="navi">
+ <ul class="naviList"> 
+  <li><a href="index.html">Home</a></li> 
+  <li><a href="products.html">Products</a></li> 
+  <li><a href="freebies.html">Freebies</a></li>
+  <li><a href="support.html">Support</a></li>
+  <li><a href="tutorials.html">Tutorials</a></li>
+  <li><a href="company.html">Company</a></li>
+  <li><a href="misc.html">Misc</a></li>
+ </ul>  
+</div></body></html>

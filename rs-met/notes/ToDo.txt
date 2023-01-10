@@ -1,0 +1,61 @@
+
+-maybe replace the <hr> tags with overlines (border-top) for headline h3 
+ -maybe use interesting 3D styles for the overlines
+
+
+
+
+-maybe use different titles for the different pages
+-include meta-tags for character-set
+-dont use hex-colors for RGB in the stylesheet
+
+
+-replace cellspacing with CSS border-spacing (cellspacing is not strict html,
+ see Muenz)  -> cellpadding too? -> do research
+
+-introduce new website on KVR as: website facelifted - comments welcome
+
+-site is messed up in IE6 - find out why 
+
+-specify font (arial), not only font-family (sans-serif)
+
+
+-maybe switch to xhtml (Münz says that this is the future - do research)
+
+
+
+
+-use Arial, Helvetica, sans-serif for the fonts
+
+-maybe use google analytics
+ 
+
+-maybe make screenshot magnification/shrinkage equal for all screenshots
+
+
+
+-use on-site buttons (download, etc.)
+
+
+
+
+-avoid too much redundancy between the feature list and the description texts
+
+-avoid text redundancy - see, if we can embedd html-files in other html-files (for example, the disclaimer, the EULA, the short descriptions that appear on th products-site as well as on the individual product sites, etc.)
+ ->javascript based client side includes or use server-side includes
+
+
+Freebies page
+ -maybe include an on-page navigation with small screenshots and page-internal anchors
+
+Company page:
+ -add section B2B, Consulting/Contract Work or whatever
+
+-make a separate page for the CyclePack - with description and so on
+
+-include VST logo on startpage, later AU logo, OSX, Windows, maybe Linux - logos for all supported platforms
+
+
+-sell Straightliner and EchoLab as bundle for 129
+
+check why the encryption stuff is missing on the purchas_echolab.html page - is it not necesarry anymore or did i miss to include it?
